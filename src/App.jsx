@@ -1,4 +1,5 @@
 import "./App.css";
+import ExtraButton from "./ExtraButton";
 import React from "react";
 
 const { useState } = React;
@@ -24,6 +25,9 @@ function App() {
             <Button increment={100} onClickFunction={incrementCount} />
             <Button increment={1000} onClickFunction={incrementCount} />
             <span className="count_display">{count}</span>
+            <div>
+                <ExtraButton arbitrary="Extra Big Button" />
+            </div>
         </div>
     );
 }
